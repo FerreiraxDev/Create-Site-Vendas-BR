@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1b1919;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.container-banner{
+  display: flex;
+  justify-content: space-between;/* criar espaçamento entre os elementos do display flex container */
+  flex-direction: row; /* itens alinhados em linha */
+  align-items: center; /* alinhar itens do banner */
+  height: 100px;
+}
+.img-logo{
+  block-size: 90px;
+}
+}
+.nav-bar ul{
+  list-style: none; /* tirar a bolinha do nav */
+}
+.nav-bar a{
+  color: #EFB110;
+  text-decoration: none; /* tirar o sublinhado do nav */
+  font-size: 20px;
+}
+.nav-bar nav{
+  margin-right: 5rem;
+}
+.nav-bar ul li{
+  display: inline;
+  padding: 12px;
+}
+.borda{
+  padding: 6px;
+  border: 1px solid #d4d4dd;
+  border-radius: 20px;
+  background-color: #2b2b3a;
+}
+
+.principal{
+  margin-bottom: 48px;
+  border-top: 1px solid #fff;
+}
+.texto-principal{
+  display: flex;
+  flex-direction: column;
+  color: #EFB110;
+  align-items: center;
+}
+.texto-principal h1{
+  font-size: 55px;
+}
+.texto-principal h2{
+  font-size: 27px;
+  margin-top: -20px;
+}
+
+  /* COMEÇO DO BANNER SLIDE */
+  .slidershow{
+    width: 1090px;
+    height: 255px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.7s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+  /* FIM DO BANNER SLIDE */
+
+  /* Retângulos */
+  .information{
+    display: flex;
+    justify-content: center;
+    margin-top: 17rem;
+  }
+  .retangulo{
+    height: 480px;
+  }
+ /* FIM Retângulos */
+  .footer{
+    display: flex;
+    flex-direction: column;
+    color: #EFB110;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  /* adc essas propriedades para o footer ir para o lugar certo na página */
+  .footer-principal{
+    position: fixed;
+    bottom: 0;
+  }
